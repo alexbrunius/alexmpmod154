@@ -44,6 +44,7 @@
 - Attempt to fix Carrier wing wipe bug by making naval bombers gain efficiency after zone switch really fast.
 - Attempt to fix Carrier wing wipe bug by making naval aircombat less lethal.
 - Attempt to fix Carrier wing wipe bug by making Air AI value efficiency more and naval strike less.
+- Fixed some personality traits not affecting stats for historical leaders
 
 
 Key previous features of the mod:
