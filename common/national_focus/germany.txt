@@ -4042,6 +4042,11 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			NOT = { is_in_faction_with = SWI }
+			NOT = {
+				FRA = {
+					has_capitulated = yes
+				}
+			}
 		}
 		bypass = {
 			NOT = { country_exists = SWI }
