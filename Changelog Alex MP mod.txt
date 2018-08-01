@@ -45,6 +45,7 @@
 - Attempt to fix Carrier wing wipe bug by making naval aircombat less lethal.
 - Attempt to fix Carrier wing wipe bug by making Air AI value efficiency more and naval strike less.
 - Added AI strategy plans for Sweden, Portugal and Turkey to focus on exporting resources and be less attractive to conquer.
+- Added AI strategy plan for Sweden to focus on ART/AT/AA research and appointing Bofors designer.
 
 
 Key previous features of the mod:
