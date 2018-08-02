@@ -44,6 +44,7 @@
 - Attempt to fix Carrier wing wipe bug by making naval bombers gain efficiency after zone switch really fast.
 - Attempt to fix Carrier wing wipe bug by making naval aircombat less lethal.
 - Attempt to fix Carrier wing wipe bug by making Air AI value efficiency more and naval strike less.
+- Suppression factor of MP company increased; base from 20% to 40% and per level from 10% to 20%.
 
 
 Key previous features of the mod:
