@@ -1,4 +1,11 @@
-﻿1.5.3 Changelog
+﻿1.5.4 Changelog
+ 
+- Added AI strategy plans for Sweden, Portugal and Turkey to focus on exporting resources and be less attractive to conquer.
+- Added AI strategy plan for Sweden to focus on ART/AT/AA research and appointing Bofors designer.
+- Redone Vichy France content.
+ 
+  
+ 1.5.3 Changelog
 
 - Included the mod Strategic View Adjustments
 - Included the mod Allied Construction Projects
@@ -44,7 +51,8 @@
 - Attempt to fix Carrier wing wipe bug by making naval bombers gain efficiency after zone switch really fast.
 - Attempt to fix Carrier wing wipe bug by making naval aircombat less lethal.
 - Attempt to fix Carrier wing wipe bug by making Air AI value efficiency more and naval strike less.
-- Redone Vichy France content.
+
+
 
 
 Key previous features of the mod:
