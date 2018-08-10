@@ -160,6 +160,8 @@ operations = {
 
 		fire_only_once = yes
 
+		cancel_if_not_visible = yes
+
 		allowed = {
 			tag = ENG
 		}
@@ -168,10 +170,13 @@ operations = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
-			553 = { is_owned_by = VIC } # Lebanon
-			554 = { is_owned_by = VIC } # Damascus
-			677 = { is_owned_by = VIC } # Aleppo
-			680 = { is_owned_by = VIC } # Deir-az-Zur
+			NOT = { has_war_with = VIC }
+			OR = {
+				553 = { is_owned_by = VIC } # Lebanon
+				554 = { is_owned_by = VIC } # Damascus
+				677 = { is_owned_by = VIC } # Aleppo
+				680 = { is_owned_by = VIC } # Deir-az-Zur
+			}
 			OR = {
 				divisions_in_state = { state = 454 size > 2 } # Palestine
 				FRA = {
@@ -182,7 +187,7 @@ operations = {
 
 		cost = 25
 
-		days_remove = 1
+		days_remove = 30
 
 		ai_will_do = {
 			factor = 1
@@ -192,14 +197,19 @@ operations = {
 			tag = ENG
 			has_war_with = GER
 			VIC = { exists = yes }
+			NOT = { has_war_with = VIC }
 			#NOT = { has_country_flag = syria_lebanon_campaign }
 		}
 		
 		remove_effect = {
+			if = {
+				limit = { }
+			}
 			FRA = { transfer_state = 553 } # Lebanon
 			FRA = { transfer_state = 554 } # Damascus
 			FRA = { transfer_state = 677 } # Aleppo
 			FRA = { transfer_state = 680 } # Deir-az-Zur
+			army_experience = 20
 			#hidden_effect = { set_country_flag = syria_lebanon_campaign }
 		}
 	}
@@ -210,6 +220,8 @@ operations = {
 
 		fire_only_once = yes
 
+		cancel_if_not_visible = yes
+
 		allowed = {
 			tag = ENG
 		}
@@ -218,11 +230,14 @@ operations = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
-			543 = { is_owned_by = VIC } # Madagascar
-			706 = { is_owned_by = VIC } # Reunion
-			713 = { is_owned_by = VIC } # Kerguelen
-			708 = { is_owned_by = VIC } # Comoro Islands
-			268 = { is_owned_by = VIC } # French Somaliland
+			NOT = { has_war_with = VIC }
+			OR = {
+				543 = { is_owned_by = VIC } # Madagascar
+				706 = { is_owned_by = VIC } # Reunion
+				713 = { is_owned_by = VIC } # Kerguelen
+				708 = { is_owned_by = VIC } # Comoro Islands
+				268 = { is_owned_by = VIC } # French Somaliland
+			}
 			OR = {
 				divisions_in_state = { state = 719 size > 2 } # Durban
 				FRA = {
@@ -233,7 +248,7 @@ operations = {
 
 		cost = 25
 
-		days_remove = 1
+		days_remove = 30
 
 		ai_will_do = {
 			factor = 1
@@ -243,6 +258,7 @@ operations = {
 			tag = ENG
 			has_war_with = GER
 			VIC = { exists = yes }
+			NOT = { has_war_with = VIC }
 			NOT = { has_country_flag = operation_ironclad }
 		}
 		
@@ -252,6 +268,7 @@ operations = {
 			FRA = { transfer_state = 713 } # Kerguelen
 			FRA = { transfer_state = 708 } # Comoro Islands
 			FRA = { transfer_state = 268 } # French Somaliland
+			army_experience = 20
 			hidden_effect = { set_country_flag = operation_ironclad }
 		}
 	}
@@ -262,6 +279,8 @@ operations = {
 
 		fire_only_once = yes
 
+		cancel_if_not_visible = yes
+
 		allowed = {
 			tag = ENG
 		}
@@ -270,10 +289,13 @@ operations = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
-			515 = { is_owned_by = VIC } # Southern Sahara
-			556 = { is_owned_by = VIC } # French West Africa
-			557 = { is_owned_by = VIC } # Mauritania
-			272 = { is_owned_by = VIC } # Senegal
+			NOT = { has_war_with = VIC }
+			OR = {
+				515 = { is_owned_by = VIC } # Southern Sahara
+				556 = { is_owned_by = VIC } # French West Africa
+				557 = { is_owned_by = VIC } # Mauritania
+				272 = { is_owned_by = VIC } # Senegal
+			}
 			OR = {
 				divisions_in_state = { state = 539 size > 1 } # Gabon
 				FRA = {
@@ -282,9 +304,9 @@ operations = {
 			}
 		}
 
-		cost = 25
+		cost = 5
 
-		days_remove = 1
+		days_remove = 30
 
 		ai_will_do = {
 			factor = 1
@@ -294,6 +316,7 @@ operations = {
 			tag = ENG
 			has_war_with = GER
 			VIC = { exists = yes }
+			NOT = { has_war_with = VIC }
 			NOT = { has_country_flag = battle_of_gabon }
 		}
 		
@@ -326,7 +349,7 @@ operations = {
 
 		cost = 25
 
-		days_remove = 1
+		days_remove = 60
 
 		ai_will_do = {
 			factor = 1
